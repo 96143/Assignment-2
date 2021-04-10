@@ -242,6 +242,11 @@ columns=fullflexible
 \begin{center}
 %{\underline{\Large \bf Determinant}}
 \end{center}
+Download all Python codes from
+\begin{lstlisting}
+https://github.com/96143/Assignment-2/blob/main/question%201.1.ipynb
+https://github.com/96143/Assignment-2/blob/main/question%201.2.ipynb
+\end{lstlisting}
 %
 Download latex codes from 
 %
@@ -256,24 +261,33 @@ from the jar, the probability that it is green is
  $\frac{2}{3}$.
 Find the number of blue marbles in the jar.
 \section{Solution 1.1} 
-Total number of marbles = 24 \\
-\vspace{5mm} %5mm vertical space
-Let the total number of green marbles be x. \\*
-\vspace{5mm} %5mm vertical space
-Then,
-total number of blue marbles = 24 - x \\*
-\vspace{5mm} %5mm vertical space
-Probability of getting green marble = P(G) 
+\\
+Let X be the random variable that denotes whether the drawn marble is blue or green\\
+We know,\\*
+Bernoulli Distribution 
 \begin{align}
-    P(G) =  \frac{x}{24}  =  \frac{2}{3}
+P(x) = 
+\begin{cases}  
+      p^x (1-p)^{1-x}  & x=0,1;  p+q=1\\*
+        0
+       \end{cases}
 \end{align}
-Solving,\\
-we get x as 16 \\
-Therefore,\\
-total number of green marbles in the jar = 16 \\
-So,\\
-The number of green marbles =16 \\ 
-The number of blue marbles = 24 - 16 = 8 marbles \\
+In Bernoulli Distribution\\*
+         Mean -
+         \begin{align}
+         \Sigma x = 	\mu_{1}^{1} = p
+         \end{align}
+         We have probability of green marbles is $\frac{2}{3}$
+i.e. Mean = $p = \frac{2}{3}$ \\*
+\begin{align}
+  \therefore \frac{\Sigma x}{N} = \frac{2}{3} \\
+  \frac{\Sigma x}{24} = \frac{2}{3}  \\
+  \therefore \Sigma x = 16
+\end{align}
+\\
+No of Green Marbles is 16 \\
+such that we have total marbles = 24 \\
+Therefore, blue marbles = 24 - 16 = 8 Marbles
  \section{Problem 1.2}
 A bag contains lemon flavoured candies only.
 Malini takes out one candy without looking
@@ -284,23 +298,25 @@ into the bag. What is the probability that she takes out ?
 \end{enumerate}
 \section{Solution 1.2} 
 \begin{enumerate}
-    \item The bag contains only lemon flavored candies, and nothing else.
+\item Let X be the random variable that denotes whether the candy taken out is lemon or orange flavoured\\
+If X=0, then the candy is lemon flavoured\\
+If X=1, then the candy is orange flavoured\\
+Probability of taking lemon flavoured candy = $P(L)$ \\
+Probability of taking orange flavoured candy = $P(O)$ \\
+The bag contains only lemon flavored candies, and nothing else.
 There are no orange flavored candies in the bag. Hence there is no possibility of taking out an orange candy.\\
-Therefore,\\
+Therefore,
+\begin{align}
+    P(O) = P(X=1) = 0
+\end{align}
 The probability of taking out an orange flavored candy = 0 
 \vspace{5mm} %5mm vertical space
 \\
 \item The bag only contains lemon flavored candies. \\
-Therefore,\\
-No.of favorable outcomes = k \\
-Total no.of possible outcomes = n \\
-We know that, Probability of an event E,
+Therefore,
 \begin{align}
-    P(E) = \frac{k}{n}  
+    P(L) = P(X=0) = 1
 \end{align}
-\begin{align}
-    P(E) = 1 
-\end{align}
-Therefore, the probability of taking out a lemon flavored candy=1
+Therefore, the probability of taking out a lemon flavored candy = 1
 \end{enumerate}
 \end{document}
