@@ -266,16 +266,16 @@ Let X be the random variable that denotes whether the drawn marble is blue or gr
 We know,\\*
 Bernoulli Distribution 
 \begin{align}
-P(x) = 
+p_X(k) = 
 \begin{cases}  
-      p^x (1-p)^{1-x}  & x=0,1;  p+q=1\\*
+      p^k (1-p)^{1-k}  & k=0,1;  p+q=1\\*
         0
        \end{cases}
 \end{align}
 In Bernoulli Distribution\\*
          Mean -
          \begin{align}
-         \Sigma x = 	\mu_{1}^{1} = p
+         E[X] = p
          \end{align}
          We have probability of green marbles is $\frac{2}{3}$
 i.e. Mean = $p = \frac{2}{3}$ \\*
@@ -304,7 +304,7 @@ Probability of taking orange flavoured candy = $P(O)$ \\
 The bag contains only lemon flavored candies, and nothing else.
 Therefore,
 \begin{align}
-    P(O) = P(X=1) = 0
+    \pr{O} = \pr{X=1} = 0
 \end{align}
 The probability of taking out an orange flavored candy = 0 
 \vspace{5mm} %5mm vertical space
@@ -312,7 +312,7 @@ The probability of taking out an orange flavored candy = 0
 \item The bag only contains lemon flavored candies. \\
 Therefore,
 \begin{align}
-    P(L) = P(X=0) = 1
+   \pr{L} = \pr{X=0} = 1
 \end{align}
 Therefore, the probability of taking out a lemon flavored candy = 1
 \end{enumerate}
